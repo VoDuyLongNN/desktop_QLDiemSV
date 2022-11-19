@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "caad3298-fc6c-48a6-8e92-b5a160cb2f39": {
+      "ProjectGuid": "caad3298-fc6c-48a6-8e92-b5a160cb2f39",
+      "DisplayName": "DAO",
+      "ColorIndex": 0
+    },
+    "530f2a4e-7670-4a34-8c64-2ae21ac80571": {
+      "ProjectGuid": "530f2a4e-7670-4a34-8c64-2ae21ac80571",
+      "DisplayName": "GUI",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

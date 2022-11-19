@@ -1,0 +1,7 @@
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\DTO\bin\Debug\DTO.dll.config
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\DTO\bin\Debug\DTO.dll
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\DTO\bin\Debug\DTO.pdb
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\DTO\obj\Debug\DTO.dll
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\DTO\obj\Debug\DTO.pdb

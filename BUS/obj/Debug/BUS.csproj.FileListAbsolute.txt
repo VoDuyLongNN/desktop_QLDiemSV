@@ -1,0 +1,12 @@
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\bin\Debug\BUS.dll
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\bin\Debug\BUS.pdb
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\bin\Debug\DAO.dll
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\bin\Debug\DTO.dll
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\bin\Debug\DAO.pdb
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\bin\Debug\DTO.pdb
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\bin\Debug\DTO.dll.config
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\obj\Debug\BUS.dll
+D:\Học Kì 2 - Năm 2\Lập trình Trên Desktop\Đồ Án Cuối Kì\QLDiemSV\BUS\obj\Debug\BUS.pdb

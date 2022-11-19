@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLDiemSinhVien" Class="dataQLDSVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=vdl\sqlexpress01;Initial Catalog=QLDiemSinhVien;Integrated Security=True" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="QLDiemSinhVienConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SinhVien" Member="SinhViens">
+    <Type Name="SinhVien">
+      <Column Name="MaSV" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Lop" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NamSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="QueQuan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="SinhVien_DiemSV" Member="DiemSVs" ThisKey="MaSV" OtherKey="MaSV" Type="DiemSV" />
+      <Association Name="SinhVien_DiemTBHocKi" Member="DiemTBHocKis" ThisKey="MaSV" OtherKey="MaSV" Type="DiemTBHocKi" />
+      <Association Name="SinhVien_DiemTBNam" Member="DiemTBNams" ThisKey="MaSV" OtherKey="MaSV" Type="DiemTBNam" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BoMon" Member="BoMons">
+    <Type Name="BoMon">
+      <Column Name="MaBM" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenBM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="BoMon_DiemSV" Member="DiemSVs" ThisKey="MaBM" OtherKey="MaBM" Type="DiemSV" />
+      <Association Name="BoMon_GiaoVien" Member="GiaoViens" ThisKey="MaBM" OtherKey="MaBM" Type="GiaoVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DiemSV" Member="DiemSVs">
+    <Type Name="DiemSV">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaHK" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MaBM" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MaGV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DiemCC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiemGK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiemCK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DiemTBMon" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="BoMon_DiemSV" Member="BoMon" ThisKey="MaBM" OtherKey="MaBM" Type="BoMon" IsForeignKey="true" />
+      <Association Name="SinhVien_DiemSV" Member="SinhVien" ThisKey="MaSV" OtherKey="MaSV" Type="SinhVien" IsForeignKey="true" />
+      <Association Name="GiaoVien_DiemSV" Member="GiaoVien" ThisKey="MaGV" OtherKey="MaGV" Type="GiaoVien" IsForeignKey="true" />
+      <Association Name="HocKi_DiemSV" Member="HocKi" ThisKey="MaHK" OtherKey="MaHK" Type="HocKi" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DiemTBHocKi" Member="DiemTBHocKis">
+    <Type Name="DiemTBHocKi">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaHK" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DiemTB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="SinhVien_DiemTBHocKi" Member="SinhVien" ThisKey="MaSV" OtherKey="MaSV" Type="SinhVien" IsForeignKey="true" />
+      <Association Name="HocKi_DiemTBHocKi" Member="HocKi" ThisKey="MaHK" OtherKey="MaHK" Type="HocKi" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GiaoVien" Member="GiaoViens">
+    <Type Name="GiaoVien">
+      <Column Name="MaGV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaBM" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NamSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="QueQuan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="GiaoVien_DiemSV" Member="DiemSVs" ThisKey="MaGV" OtherKey="MaGV" Type="DiemSV" />
+      <Association Name="BoMon_GiaoVien" Member="BoMon" ThisKey="MaBM" OtherKey="MaBM" Type="BoMon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HocKi" Member="HocKis">
+    <Type Name="HocKi">
+      <Column Name="MaHK" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenHK" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="HocKi_DiemSV" Member="DiemSVs" ThisKey="MaHK" OtherKey="MaHK" Type="DiemSV" />
+      <Association Name="HocKi_DiemTBHocKi" Member="DiemTBHocKis" ThisKey="MaHK" OtherKey="MaHK" Type="DiemTBHocKi" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DiemTBNam" Member="DiemTBNams">
+    <Type Name="DiemTBNam">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSV" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DiemTB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="SinhVien_DiemTBNam" Member="SinhVien" ThisKey="MaSV" OtherKey="MaSV" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaiKhoang" Member="TaiKhoangs">
+    <Type Name="TaiKhoang">
+      <Column Name="TenDN" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
