@@ -10,7 +10,12 @@
       "ProjectGuid": "530f2a4e-7670-4a34-8c64-2ae21ac80571",
       "DisplayName": "GUI",
       "ColorIndex": 1
+    },
+    "886c478c-8b6a-40da-9eb6-8db1863d30fd": {
+      "ProjectGuid": "886c478c-8b6a-40da-9eb6-8db1863d30fd",
+      "DisplayName": "DTO",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
